@@ -1,20 +1,8 @@
-const Web3 = require("web3");
-
-const rpcUrl = "https://ropsten.infura.io/v3/68d671068abe4705bf8af8874836729a";
-const account = "0xFd1a067467579E517c1Ba3a7B1D59523e776CC21";
-
-const web3 = new Web3(rpcUrl);
-
-console.log("FIRST PART");
-//  Get Balance
-web3.eth.getBalance(account, (err, wei) => {
-  let balance = web3.utils.fromWei(wei, "ether");
-  console.log("BALANCE:", balance);
-});
-console.log("-----------------");
-
-console.log("SECOND PART");
 // Contract Calls
+const Web3 = require("web3");
+const config = require("./config.json");
+
+const web3 = new Web3(config.rpcUrl);
 const abi = [
   {
     constant: true,
@@ -405,8 +393,7 @@ const abi = [
   { anonymous: false, inputs: [], name: "Pause", type: "event" },
   { anonymous: false, inputs: [], name: "Unpause", type: "event" },
 ];
-const contractAddress = "0x8bDdC4e5243836882545e58E237bC6CE020c5350";
-const contract = new web3.eth.Contract(abi, contractAddress);
+const contract = new web3.eth.Contract(abi, config.contractAddress);
 
 contract.methods.totalSupply().call((err, supply) => {
   let balance = web3.utils.fromWei(supply, "ether");

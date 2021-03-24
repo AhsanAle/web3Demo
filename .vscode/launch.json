@@ -5,7 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Program",
+            "name": "Launch First",
+            "program": "${workspaceFolder}/first.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Launch Second",
+            "program": "${workspaceFolder}/second.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Launch Index",
             "program": "${workspaceFolder}/index.js",
             "request": "launch",
             "skipFiles": [
