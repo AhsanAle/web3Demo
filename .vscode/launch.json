@@ -4,6 +4,24 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // {
+        //     "name": "Launch Sixth",
+        //     "program": "${workspaceFolder}/src/sixth.js",
+        //     "request": "launch",
+        //     "skipFiles": [
+        //         "<node_internals>/**"
+        //     ],
+        //     "type": "pwa-node"
+        // },
+        {
+            "name": "Launch Fifth",
+            "program": "${workspaceFolder}/src/fifth.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
         {
             "name": "Launch Fourth",
             "program": "${workspaceFolder}/src/fourth.js",
