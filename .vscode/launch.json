@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch First",
-            "program": "${workspaceFolder}/first.js",
+            "program": "${workspaceFolder}/src/first.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
@@ -15,7 +15,7 @@
         },
         {
             "name": "Launch Second",
-            "program": "${workspaceFolder}/second.js",
+            "program": "${workspaceFolder}/src/second.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
@@ -24,7 +24,7 @@
         },
         {
             "name": "Launch Index",
-            "program": "${workspaceFolder}/index.js",
+            "program": "${workspaceFolder}/src/index.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
