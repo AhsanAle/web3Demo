@@ -1,4 +1,5 @@
 {
     "rpcUrl": "https://ropsten.infura.io/v3/68d671068abe4705bf8af8874836729a",
-    "contractAddress": "0x8bDdC4e5243836882545e58E237bC6CE020c5350"
+    "contractAddress": "0x8bDdC4e5243836882545e58E237bC6CE020c5350",
+    "contractAddressCall": "0x66f84a999Bc323a5373e766b087f4ca8B21AefAB"
 }
