@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Third",
+            "program": "${workspaceFolder}/src/third.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "name": "Launch First",
             "program": "${workspaceFolder}/src/first.js",
             "request": "launch",

@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/AhsanAle/web3Demo#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethereumjs-tx": "^2.1.2",
     "web3": "^1.3.4"
   }
 }
