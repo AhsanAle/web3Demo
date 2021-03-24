@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Eigth",
+            "program": "${workspaceFolder}/src/eighth.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "name": "Launch Seventh",
             "program": "${workspaceFolder}/src/seventh.js",
             "request": "launch",
